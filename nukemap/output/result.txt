@@ -1,0 +1,19 @@
+NUKEMAP-SZERŰ NÉPESSÉGÉRINTETTSÉG
+--------------------------------
+Epicentrum (lon, lat): 19.0402, 47.4979
+
+Tűzgömb:
+  Sugár: 500 m
+  Lefedett pontok: 1
+  Érintett népesség: 6969
+
+Lökéshullám:
+  Sugár: 1500 m
+  Lefedett pontok: 7
+  Érintett népesség: 58471
+
+Hősugárzás:
+  Sugár: 3000 m
+  Lefedett pontok: 28
+  Érintett népesség: 286413
+
