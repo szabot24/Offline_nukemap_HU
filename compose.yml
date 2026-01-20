@@ -1,0 +1,8 @@
+services:
+  
+  nukemap:
+    build:
+      context: "./nukemap"
+    volumes:
+      - ./nukemap/input:/input
+      - ./nukemap/output:/output
