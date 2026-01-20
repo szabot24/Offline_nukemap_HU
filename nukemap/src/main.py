@@ -36,11 +36,11 @@ epicenter = gpd.GeoSeries(
 pop_map_proj = pop_map.to_crs(epsg=23700)
 epicenter_proj = epicenter.to_crs(epsg=23700)
 
-# ---- FIX NUKEMAP SUGARAK (m) ----
+# ---- FIX NUKEMAP SUGARAK 1,5km-es magasságban történő detonnácói estén(m) ----
 BUFFERS = {
-    "Tűzgömb": 500,
-    "Lökéshullám": 1500,
-    "Hősugárzás": 3000
+    "Tűzgömb": 700,
+    "Hősugárzás": 7500,
+    "Lökéshullám": 12400
 }
 
 # ---- SZÁMÍTÁS ----
@@ -50,12 +50,16 @@ for name, radius in BUFFERS.items():
     buffer_geom = epicenter_proj.buffer(radius).iloc[0]
     affected = pop_map_proj[pop_map_proj.intersects(buffer_geom)]
     pop_sum = affected["T"].sum()
+    pop_m = affected["M"].sum()
+    pop_f = affected["F"].sum()
 
     results.append({
         "zona": name,
         "sugar": radius,
         "pontok": len(affected),
-        "nepesseg": int(pop_sum)
+        "nepesseg": int(pop_sum),
+        "ferfi": int(pop_m),
+        "no": int(pop_f)
     })
 
 # ---- EREDMÉNY KIÍRÁSA ----
@@ -68,6 +72,7 @@ with open(RESULT_FILE, "w", encoding="utf-8") as f:
         f.write(f"{r['zona']}:\n")
         f.write(f"  Sugár: {r['sugar']} m\n")
         f.write(f"  Lefedett pontok: {r['pontok']}\n")
-        f.write(f"  Érintett népesség: {r['nepesseg']}\n\n")
-
+        f.write(f"  Érintett népesség: {r['nepesseg']}\n")
+        f.write(f"     ebből férfi: {r['ferfi']}\n")
+        f.write(f"     ebből nő: {r['no']}\n\n")
 print("Számítás kész", RESULT_FILE)
