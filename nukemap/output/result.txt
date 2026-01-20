@@ -1,6 +1,6 @@
-NUKEMAP-SZERŰ NÉPESSÉGÉRINTETTSÉG
+NUKEMAP - HÁNY ÁLDOZATA VAN A KIVÁLASZOTT KOORDINÁTÁRA ATOMOT DOBUNK MAGYARORSZÁGON
 --------------------------------
-Epicentrum (lon, lat): 19.0402, 47.4979
+Epicentrum (hosszúság, szélesség): 19.0402, 47.4979
 
 Tűzgömb:
   Sugár: 700 m

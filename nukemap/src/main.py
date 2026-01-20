@@ -64,9 +64,9 @@ for name, radius in BUFFERS.items():
 
 # ---- EREDMÉNY KIÍRÁSA ----
 with open(RESULT_FILE, "w", encoding="utf-8") as f:
-    f.write("NUKEMAP-SZERŰ NÉPESSÉGÉRINTETTSÉG\n")
+    f.write("NUKEMAP - HÁNY ÁLDOZATA VAN A KIVÁLASZOTT KOORDINÁTÁRA ATOMOT DOBUNK MAGYARORSZÁGON\n")
     f.write("--------------------------------\n")
-    f.write(f"Epicentrum (lon, lat): {lon}, {lat}\n\n")
+    f.write(f"Epicentrum (hosszúság, szélesség): {lon}, {lat}\n\n")
 
     for r in results:
         f.write(f"{r['zona']}:\n")
