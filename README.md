@@ -7,7 +7,7 @@
 === Leírás ===
 
 
-Ez az egyszerű applikció, ami egy egyszerűsített verziója az online elérhető nukemap-nek (https://nuclearsecrecy.com/nukemap/ by Alex Wellerstein). Az alkalmazás teljesen offline működik Magyarország területén. Koordináták adják meg a detonáció középpontját, ahol W-87-es robbanófej (USA arzenáljában jelenleg használatban levők, 300kt) 1,5km magasságban robbantása hány embert érinthet (nemekre bontva is). 
+Ez egy egyszerű applikció, ami egy egyszerűsített verziója az online elérhető nukemap-nek (https://nuclearsecrecy.com/nukemap/ by Alex Wellerstein). Az alkalmazás teljesen offline működik Magyarország területén. Koordináták adják meg a detonáció középpontját, ahol W-87-es robbanófej (USA arzenáljában jelenleg használatban levők, 300kt) 1,5km magasságban robbantása hány embert érinthet (nemekre bontva is). 
 
 
 A hatások 3 kategóriára vannak osztva:
