@@ -36,7 +36,7 @@ epicenter = gpd.GeoSeries(
 pop_map_proj = pop_map.to_crs(epsg=23700)
 epicenter_proj = epicenter.to_crs(epsg=23700)
 
-# ---- FIX NUKEMAP SUGARAK 1,5km-es magasságban történő detonnácói estén(m) ----
+# ---- Bufferek sugara 1,5km-es magasságban történő detonnácói estén(m) ----
 BUFFERS = {
     "Tűzgömb": 700,
     "Hősugárzás": 7500,
